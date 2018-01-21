@@ -1,6 +1,6 @@
 // Source : https://www.codewars.com/kata/prefill-an-array/javascript
 // Author : Frank Faustino
-// Date   : 2019-01-13
+// Date   : 2018-01-13
 
 const prefill = (n, v) => {
   if (/\D/g.test(n) || n < 0) throw new TypeError(`${n} is invalid`)

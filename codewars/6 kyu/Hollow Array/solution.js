@@ -1,6 +1,6 @@
 // Source : https://www.codewars.com/kata/hollow-array
 // Author : Frank Faustino
-// Date   : 2019-01-02
+// Date   : 2018-01-02
 
 const isHollow = x => /^(1*)0{3}\1$/.test(x.map(x => x ? 1 : 0).join(''))
 

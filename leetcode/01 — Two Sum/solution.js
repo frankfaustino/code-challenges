@@ -1,6 +1,6 @@
 // Source : https://leetcode.com/problems/two-sum/
 // Author : Frank Faustino
-// Date   : 2019-01-02
+// Date   : 2018-01-02
 
 // Time complexity: O(n)
 // Space complexity: O(n)

@@ -1,6 +1,6 @@
 // Source : https://www.codewars.com/kata/simple-calculator/solutions/javascript
 // Author : Frank Faustino
-// Date   : 2016-09-16
+// Date   : 2017-09-16
 
 // You are required to create a simple calculator that returns the result of addition, subtraction, multiplication or division of two numbers.
 // Your function will accept three arguments:

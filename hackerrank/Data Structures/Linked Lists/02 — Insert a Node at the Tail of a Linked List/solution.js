@@ -1,6 +1,7 @@
 // Source : https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem
 // Author : Frank Faustino
-// Date   : 2019-01-19
+// Date   : 2018-01-19
+// Lang   : JavaScript
 
 /*
   Node is defined as
