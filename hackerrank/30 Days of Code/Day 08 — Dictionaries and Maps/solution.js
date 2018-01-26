@@ -8,16 +8,18 @@ const processData = input => {
   const len = parsed.splice(0, 1)[0]
   const numbers = parsed.slice(0, len)
   const names = parsed.slice(len)
-  let book = {}
 
-  numbers.map(v => {
-    let [name, num] = v.split(' ')
-    book[name] = num
-  })
+  const book = numbers.reduce((acc, cur) => {
+    let [name, num] = cur.split(' ')
+    acc[name] = num
+    return acc
+  }, {})
 
   names.forEach(name => {
-    !!book[name]
-      ? console.log(`${name}=${book[name]}`)
-      : console.log('Not found')
+    console.log(
+      name in book
+      ? `${name}=${book[name]}`
+      : 'Not found'
+    )
   })
 }
