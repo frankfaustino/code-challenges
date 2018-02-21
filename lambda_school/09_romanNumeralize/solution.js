@@ -4,7 +4,7 @@
 // Lang   : JavaScript
 
 const romanNumeralize = number => {
-  key = {
+  const key = {
      M: 1000,
     CM:  900,
      D:  500,
@@ -18,15 +18,15 @@ const romanNumeralize = number => {
      V:    5,
     IV:    4,
      I:    1
-  };
+  }
 
-  let output = '';
+  let output = ''
   for (let entry in key) {
     while (number >= key[entry]) {
-      output += entry;
-      number -= key[entry];
+      output += entry
+      number -= key[entry]
     }
   }
 
-  return output;
+  return output
 }
