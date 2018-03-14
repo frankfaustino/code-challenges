@@ -1,6 +1,6 @@
 // Title  : String Compression
 // Author : Frank Faustino
-// Date   : 2018-03-18
+// Date   : 2018-03-13
 // Lang   : JavaScript
 
 const stringCompression = str => {
