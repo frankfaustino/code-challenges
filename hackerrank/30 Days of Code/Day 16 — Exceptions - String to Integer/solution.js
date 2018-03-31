@@ -4,10 +4,10 @@
 // Lang   : JavaScript
 
 const main = () => {
-  const S = readLine();
+  const S = readLine()
   try {
-    console.log(parseInt(S).toString().replace('NaN', 'Bad String'))
-  } catch (err) {
-    console.log(err)
+      console.log(eval(S))
+  } catch (e) {
+      console.log('Bad String')
   }
 }
