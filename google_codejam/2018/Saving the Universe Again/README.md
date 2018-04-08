@@ -48,13 +48,13 @@ No additional restrictions to the Limits section.
 
 Input | Output
 ------|-------
-6 | 
-1 `CS` | `Case #1: 1`
-2 `CS` | `Case #2: 0`
-1 `SS` | `Case #3: IMPOSSIBLE`
-6 `SCCSSC` | `Case #4: 2`
-2 `CC` | `Case #5: 0`
-3 `CSCSS` | `Case #6: 5`
+`6` | 
+`1 CS` | `Case #1: 1`
+`2 CS` | `Case #2: 0`
+`1 SS` | `Case #3: IMPOSSIBLE`
+`6 SCCSSC` | `Case #4: 2`
+`2 CC` | `Case #5: 0`
+`3 CSCSS` | `Case #6: 5`
 
 Note that the last three sample cases would not appear in test set 1.
 
