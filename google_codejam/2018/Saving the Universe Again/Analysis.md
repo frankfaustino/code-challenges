@@ -6,7 +6,7 @@ If there is no `C` instruction in **P**, then none of our swaps will have any ef
 
 If there is one `C` instruction in **P**, then we can try every possible position for the `C` instruction in the program. Assuming that there is at least one position for the `C` instruction that causes the total damage not to exceed **D**, we can choose the scenario that requires the fewest swaps; the number of required swaps for a scenario is equal to the distance between the original and final positions of the `C` instruction.
 
-Test set 2
+## Test set 2
 To solve test set 2, we will first derive a formula to compute the total damage based on the positions of the `C` and `S` instructions in **P**. Let N<sub>C</sub> and N<sub>S</sub> be the number of `C` and `S` instructions in **P**, respectively. Let C<sub>i</sub> be the number of `S` instructions to the right of the i-th `C` instruction, where i uses 1-based indexing.
 
 Note that the i-th `C` instruction will increase the damage of the subsequent beams by 2<sup>i-1</sup>. For example, in the input program `CSSCSSCSS`, initially, all of the `S` instructions will inflict a damage of 1. Consider the damage dealt by the last `S` instruction. Since the robot has been charged twice, the damage output by the last instruction will be 4. Alternatively, we see that the damage, 4 = 1 (initial damage) + 2<sup>0</sup> (damage caused by the first `C`) + 2<sup>1</sup> (damage caused by the second `C`). By breaking down the damage by each `S` instruction in the same manner, the total damage output, `D`, of the input program is given by:
