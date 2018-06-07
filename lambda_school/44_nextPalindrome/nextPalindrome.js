@@ -1,14 +1,9 @@
-// Title/Source : 
-// Author : Frank Faustino
-// Date   : 2018-
-// Lang   : JavaScript
-
 /* ———
- * 
- * 
+ * Given a number, find the next smallest palindrome number larger than the number.
+ * If the number is 125. the next palindrome is 131.
  * ——— */
 
-const x = x => {
+const nextPalindrome = n => {
   // Code here
 }
 
