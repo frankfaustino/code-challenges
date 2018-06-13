@@ -19,3 +19,32 @@ const quickSort = (arr) => {
 
   return [...quickSort(left), pivot, ...quickSort(right)]
 }
+
+// b) Recursive solution
+const swap = (array, firstIndex, secondIndex) => {
+  const temp = array[firstIndex]
+  array[firstIndex] = array[secondIndex]
+  array[secondIndex] = temp
+}
+
+const partition = (array, p, r) => {
+  let q = p
+  for (let i = p; i < r; i++) {
+    if (array[i] <= array[r]) {
+      swap(array, i, q)
+      q++
+    }
+  }
+  swap(array, r, q)
+  return q
+}
+
+const quickSort = (array, p = 0, r = array.length - 1) => {
+  if (p < r) {
+    const q = partition(array, p, r)
+    quickSort(array, p, q - 1)
+    quickSort(array, q + 1, r)
+  }
+
+  return array
+}
