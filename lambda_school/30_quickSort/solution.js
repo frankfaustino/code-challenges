@@ -12,9 +12,9 @@ const quickSort = (arr) => {
   const left = []
   const right = []
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] <= pivot) left.push(arr[i])
-    else right.push(arr[i])
+  for (let x of arr) {
+    if (x <= pivot) left.push(x)
+    else right.push(x)
   }
 
   return [...quickSort(left), pivot, ...quickSort(right)]

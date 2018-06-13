@@ -4,20 +4,14 @@
 # Lang   : Python
 
 def quickSort(array):
+    if len(array) < 2: return array
+
+    pivot = array.pop()
     left = []
-    equal = []
     right = []
 
-    if len(array) < 2:
-        return array
-
-    pivot = array[0]
     for x in array:
-        if x < pivot:
-            left.append(x)
-        elif x == pivot:
-            equal.append(x)
-        else:
-            right.append(x)
+        if x < pivot: left.append(x)
+        else: right.append(x)
 
-    return quickSort(left) + equal + quickSort(right)
+    return quickSort(left) + [pivot] + quickSort(right)
