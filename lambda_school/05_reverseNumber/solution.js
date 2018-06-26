@@ -2,21 +2,29 @@
 // Author : Frank Faustino
 // Date   : 2018-02-19
 // Lang   : JavaScript
+// Perf   : https://jsperf.com/reversenumber-test/
 
-// a. modulo and while loop
+// a. arithmetic operators and while loop
 const reverseNumber = n => {
   let reversed = 0
 
-  while (n !== 0) {
+  while (n > 0) {
+    // shift reversed by one place value
+    // so we can add to the ones’ place (1 -> 10 -> 12)
     reversed *= 10
+    // add the last digit of n (remainder of n / 10) to reversed
     reversed += n % 10
-    n = parseInt(n / 10)
- }
+    // subtract the last digit of n from n (123 -> 120)
+    n -= n % 10
+    // remove the ones' place value from n (120 -> 12)
+    n /= 10
+  }
 
- return reversed
+  return reversed
 }
 
-// b. modulo and for loop
+
+// b. arithmetic operators and for loop
 const reverseNumber = n => {
   let reversed = 0
 
