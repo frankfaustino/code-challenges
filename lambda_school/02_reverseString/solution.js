@@ -3,29 +3,30 @@
 // Date   : 2018-02-19
 // Lang   : JavaScript
 
-// a. split reverse join
-const reverseString = str => str.split('').reverse().join('')
+// a) recursion
+const reverseString = str => str ? (reverseString(str.substr(1)) + str[0]) : str
 
-// b. for loop
+// b) while loop
+const reverseString =
+  (str, i = str.length - 1, output = '') => {
+    while (i >= 0) {
+      output += str[i]
+      i--
+    }
+
+    return output
+  }
+
+// c) for loop
 const reverseString = str => {
-  const arr = str.split('')
-  let reversed = ''
+  let output = ''
 
   for (let i = str.length - 1; i >= 0; i--) {
-    answer += str[i]
+    output += str[i]
   }
 
-  return reversed
+  return output
 }
 
-// c. while loop
-const reverseString = str => {
-  const arr = str.split('')
-  let reversed = ''
-
-  while (arr.length) {
-    reversed += arr.pop()
-  }
-
-  return reversed
-}
+// d) built-in methods
+const reverseString = str => str.split('').reverse().join('')
