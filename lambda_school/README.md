@@ -33,7 +33,7 @@
 29. Quick Sort
 30. [Merge Sort](30.%20Merge%20Sort) ❌
 31. [Breadth First Search](31.%20Breadth%20First%20Search) ❌
-32. [Digits Raised To Consecutive Powers](31.%20Digits%20Raised%20To%20Consecutive%20Powers) ❌
+32. [Digits Raised To Consecutive Powers](31.%20Digits%20Raised%20to%20Consecutive%20Powers) ❌
 33. Largest Contiguous Sum ❌
 34. Prime Reduction
 35. Largest Difference In Array
