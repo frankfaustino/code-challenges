@@ -68,3 +68,4 @@
 69. Lists
 70. Mean Median Mode
 71. Linked List
+72. [Find Rotation Point in Array](72.%20[py]%20Find%20Rotation%20Point)
