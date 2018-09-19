@@ -4,9 +4,9 @@ Write a function that, given a string, determines whether any permutation of tha
 
 #### Examples:
 
-`"civic"` should return `True`
-`"ivicc"` should return `True`
-`"civil"` should return `False`
+`"civic"` should return `True`  
+`"ivicc"` should return `True`  
+`"civil"` should return `False`  
 `"livci"` should return `False`
 
 #### Note:
