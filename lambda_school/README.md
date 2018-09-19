@@ -70,3 +70,4 @@
 71. [Linked List](71.%20[py]%20Linked%20List)
 72. [Find Rotation Point in Array](72.%20[py]%20Find%20Rotation%20Point)
 73. [Doubly Linked List](73.%20[py]%20Doubly%20Linked%20List)
+74. [Permutation Palindrome](74.%20[py]%20Permutation%20Palindrome)
