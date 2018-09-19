@@ -8,7 +8,7 @@
 const numJewelsInStones = function(J, S) {
   const dict = {}
   let counter = 0
-  
+
   for (let i = 0; i < J.length; i++) {
       dict[J[i]] = true
   }
