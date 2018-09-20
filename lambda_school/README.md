@@ -1,4 +1,4 @@
-# Lambda School Code Challenges
+# <a name="0"></a>Lambda School Code Challenges
 
 #### JavaScript
 
@@ -50,7 +50,7 @@
 46. `rand7` To `rand5` ❌
 47. Stack Machine ❌
 48. Emulate Logic Gates
-49. Rotate Image ❌
+49. [Rotate Image](49.%20Rotate%20Image)
 50. Two-Stack Queue ❌
 51. Telephone Words
 52. Route Between Nodes ❌
@@ -71,3 +71,6 @@
 72. [Find Rotation Point in Array](72.%20[py]%20Find%20Rotation%20Point)
 73. [Doubly Linked List](73.%20[py]%20Doubly%20Linked%20List)
 74. [Permutation Palindrome](74.%20[py]%20Permutation%20Palindrome)
+
+[↑](#0)
+***
