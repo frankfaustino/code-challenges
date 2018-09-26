@@ -25,7 +25,7 @@
 21. Equal Sides
 22. Check Matching Leaves
 23. Markdown Tables ❌
-24. Rock Paper Scissors ❌
+24. [Rock Paper Scissors](24.%20Rock%20Paper%20Scissors) ⭐️
 25. Merged Objects
 26. Twin Primes
 27. Bubble Sort
@@ -46,7 +46,7 @@
 42. Balanced Brackets
 43. Next Palindromic Number
 44. Linked List Cycle ❌
-45. Reverse Linked List ❌
+45. [Reverse Linked List](45.%20Reverse%20Linked%20List) ⭐️
 46. `rand7` To `rand5` ❌
 47. Stack Machine ❌
 48. Emulate Logic Gates
