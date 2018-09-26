@@ -3,7 +3,7 @@
  * Author : Frank Faustino
  * Date   : 2018-09-26
  * Lang   : JavaScript
- *
+
  * The solution uses recursion to find all the possible combination
  * of plays. There are three separate recursive calls for each play —
  * "rock", "paper", "scissors" — and additional recursive calls for each
@@ -17,11 +17,8 @@
  *   rock     paper
  *   rock     scissors
  *   paper    rock
-  ...
+ *   ...
  */
-
-
-
 
 const rockPaperScissors = rounds => {
   const plays = ['rock', 'paper', 'scissors']
