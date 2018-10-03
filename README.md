@@ -5,6 +5,8 @@ This initially began as a "100 Days of Code" personal challenge, where I would c
 
 If you'd like to give the challenges a shot read the usage instructions below. I've included unit tests for some of the challenges.
 
+<hr>
+
 #### Usage:
 
 1. `cd` into the directory of your choice.  
@@ -21,7 +23,7 @@ or Python
 python tests/<filename>
 ```
 
-**Example:**
+#### Example:
 
 1. `cd src/codesignal/company_challenges/Uber/parkingSpot/`
 2. Read the `README.md`  
@@ -30,11 +32,11 @@ python tests/<filename>
 
 <hr>
 
-#### links:
-[codewars.com/users/dasfrank](https://www.codewars.com/users/dasfrank)\
-[hackerrank.com/frenk](https://www.hackerrank.com/frenk)
-[app.codesignal.com/profile/lefrenk](https://app.codesignal.com/profile/lefrenk)
-[leetcode.com/frankfaustino/](https://leetcode.com/frankfaustino/)
+#### Links:
+[codewars.com/users/dasfrank](https://www.codewars.com/users/dasfrank)  
+[hackerrank.com/frenk](https://www.hackerrank.com/frenk)  
+[app.codesignal.com/profile/lefrenk](https://app.codesignal.com/profile/lefrenk)  
+[leetcode.com/frankfaustino/](https://leetcode.com/frankfaustino/)  
 <hr>
 
 👋
