@@ -1,0 +1,22 @@
+{
+  "name": "Code-Challenges",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankfaustino/Code-Challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frankfaustino/Code-Challenges/issues"
+  },
+  "homepage": "https://github.com/frankfaustino/Code-Challenges#readme",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}

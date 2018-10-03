@@ -50,3 +50,5 @@ function parkingSpot(carDimensions, parkingLot, luckySpot) {
 
   return isValidSpot
 }
+
+module.exports = parkingSpot
