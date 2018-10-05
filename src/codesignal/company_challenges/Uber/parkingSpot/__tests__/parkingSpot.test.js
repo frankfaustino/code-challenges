@@ -8,7 +8,7 @@ describe('codesignal: Uber — parkingSpot', () => {
                         [0,0,0,0,0,1],
                         [1,0,1,1,1,1]]
     const luckySpot = [1, 1, 2, 3]
-    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBeTruthy()
+    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBe(true)
   })
   test('Two', () => {
     const carDimensions = [3, 2]
@@ -26,7 +26,7 @@ describe('codesignal: Uber — parkingSpot', () => {
                         [0,0,0,0,0,1],
                         [1,0,0,0,1,1]]
     const luckySpot = [0, 3, 3, 3]
-    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBeTruthy()
+    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBe(true)
   })
   test('Four', () => {
     const carDimensions = [2, 1]
@@ -34,7 +34,7 @@ describe('codesignal: Uber — parkingSpot', () => {
                         [1,0,1],
                         [1,1,1]]
     const luckySpot = [0, 1, 1, 1]
-    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBeTruthy()
+    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBe(true)
   })
   test('Five', () => {
     const carDimensions = [4, 2]
@@ -56,7 +56,7 @@ describe('codesignal: Uber — parkingSpot', () => {
                         [0,0,0],
                         [0,0,0]]
     const luckySpot = [1, 0, 7, 1]
-    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBeTruthy()
+    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBe(true)
   })
   test('Seven', () => {
     const carDimensions = [5, 3]
@@ -101,7 +101,7 @@ describe('codesignal: Uber — parkingSpot', () => {
                         [1,0,0,0],
                         [1,0,1,0]]
     const luckySpot = [1, 2, 1, 3]
-    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBeTruthy()
+    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBe(true)
   })
   test('Twelve', () => {
     const carDimensions = [7, 2]
@@ -109,6 +109,6 @@ describe('codesignal: Uber — parkingSpot', () => {
                         [1,0,0,0,0,0,0,0],
                         [0,0,0,0,0,0,0,0]]
     const luckySpot = [1, 1, 2, 7]
-    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBeTruthy()
+    expect(parkingSpot(carDimensions, parkingLot, luckySpot)).toBe(true)
   })
 })
