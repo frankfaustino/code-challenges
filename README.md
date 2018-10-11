@@ -16,7 +16,7 @@ If you'd like to give the challenges a shot read the usage instructions below. I
 
 JavaScript
 ```
-npm test <folder-name>
+npm test <filename>
 ```
 or Python
 ```

@@ -2,6 +2,11 @@
 
 #### JavaScript
 
+Legend:  
+❌ Not solved yet
+⭐️ Whiteboard interview practice
+📝 Has unit test
+
 01. [Longest String](01.%20Longest%20String/)
 02. Reverse String
 03. Reverse Case
@@ -43,7 +48,7 @@
 39. Binary Array Sort In Linear Time ❌
 40. Armstrong Numbers
 41. Deep Equality ❌
-42. Balanced Brackets
+42. [Balanced Brackets](42.%20Balanced%20Brackets) 📝
 43. Next Palindromic Number
 44. Linked List Cycle ❌
 45. [Reverse Linked List](45.%20Reverse%20Linked%20List) ⭐️
@@ -69,7 +74,7 @@
 70. [Mean Median Mode](70.%20[py]%20Mean%20Median%20Mode)
 71. [Linked List](71.%20[py]%20Linked%20List)
 72. [Find Rotation Point in Array](72.%20[py]%20Find%20Rotation%20Point)
-73. [Doubly Linked List](73.%20[py]%20Doubly%20Linked%20List)
+73. [Doubly Linked List](73.%20[py]%20Doubly%20Linked%20List) 📝
 74. [Permutation Palindrome](74.%20[py]%20Permutation%20Palindrome)
 
 [↑](#0)

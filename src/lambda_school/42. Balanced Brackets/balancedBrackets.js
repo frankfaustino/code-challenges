@@ -16,3 +16,5 @@ balancedBrackets('[](){}') // true
 balancedBrackets('[({})]') // true
 balancedBrackets('[(]{)}') // false
 balancedBrackets('const obj = { x: someFunction() }') // true
+
+module.exports = balancedBrackets
