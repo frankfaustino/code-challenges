@@ -2,10 +2,10 @@
 
 #### JavaScript
 
-Legend:  
-❌ Not solved yet
-⭐️ Whiteboard interview practice
-📝 Has unit test
+<u>*Legend:*</u>  
+❌ — Not solved yet  
+⭐️ — Whiteboard interview practice  
+📝 — Has unit test
 
 01. [Longest String](01.%20Longest%20String/)
 02. Reverse String
@@ -65,6 +65,7 @@ Legend:
 
 #### C
 
+56. [Nth Fibonacci](56.%20[C]%20Nth%20Fibonacci)
 62. Quick Sort
 
 #### Python
