@@ -1,11 +1,11 @@
 # <a name="0"></a>Lambda School Code Challenges
 
-#### JavaScript
-
 <u>*Legend:*</u>  
 ❌ — Not solved yet  
 ⭐️ — Whiteboard interview practice  
 📝 — Has unit test
+
+#### JavaScript
 
 01. [Longest String](01.%20Longest%20String/)
 02. Reverse String
