@@ -12,6 +12,9 @@ class Node:
   def __repr__(self):
     return f'{self.value}'
 
+# Time Complexity: O(n)
+# Space Complexity: O(n)
+# Can do better than this. What about in-place?
 def reverseList(self):
   stack = []
   head = None
