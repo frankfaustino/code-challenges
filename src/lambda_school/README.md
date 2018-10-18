@@ -66,6 +66,7 @@
 #### C
 
 56. [Nth Fibonacci](56.%20[C]%20Nth%20Fibonacci)
+57. [Highest Product of Three](57.%20[C]%20Highest%20Product%20of%20Three)
 62. Quick Sort
 
 #### Python

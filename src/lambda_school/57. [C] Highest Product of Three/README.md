@@ -25,13 +25,13 @@ This solution's time complexity is <i>O(n)</i>. Any integer in the array could p
 
 <i>Consider the following example:</i>
 
-```
+```js
 const array = [1, 10, -5, 1, -100]
 ```
 
 The highest product of 3 (`−100 ∗ −5 ∗ 10`) from that array is `5000` but up until the last iteration, the highest product of 3 was `10` (`1 * 10 * 1`). In order to get the correct highest product of 3, we'd have to have kept a reference to `-5` and `10 * -5`.
 
-```
+```js
 function highestProductOf3(arr) {
   if (arr.length < 3) {
     throw new Error('There\'s less than 3 items!')
