@@ -36,6 +36,7 @@ function highestProductOf3(arr) {
   if (arr.length < 3) {
     throw new Error('There\'s less than 3 items!')
   }
+
   // We're going to start the the 3rd item (index 2)
   // So we pre-populate our variables with the first few items
   // Highest product of 3 (h3) will end up checking itself during the first iteration
@@ -46,15 +47,16 @@ function highestProductOf3(arr) {
   let l  = Math.min(arr[0], arr[1])
 
   for (let i = 2; i < arr.length; i++) {
+
     // Do we have a new highest product of 3?
     // It's either the current highest
     // or the current times the highest product of two
     // or the current times the lowest product of two
-
     h3 = Math.max(h3, h2 * arr[i], l2 * arr[i])
-    // Do we have a new highest product of two?
 
+    // Do we have a new highest product of two?
     h2 = Math.max(h2, h * arr[i], l * arr[i])
+
     // Do we have a new lowest product of two?
     l2 = Math.min(l2, h * arr[i], l * arr[i])
 
