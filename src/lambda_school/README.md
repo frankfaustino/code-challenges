@@ -68,6 +68,7 @@
 56. [Nth Fibonacci](56.%20[C]%20Nth%20Fibonacci)
 57. [Highest Product of Three](57.%20[C]%20Highest%20Product%20of%20Three)
 58. [Stack](58.%20[C]%20Stack)
+59. [Binary Search Tree](59.%20[C]%20Binary%20Search%20Tree)
 62. Quick Sort
 
 #### Python
