@@ -10,9 +10,25 @@ typedef struct node {
   int value;
   struct node *left, *right;
 } node;
+// typedef creates an alias for struct node
+// typedef struct node {} node
+// Now "node" is a type name in the ordinary identifiers namespace
+// that is a synonym or alias for struct node.
+
+// Alternate way:
+// typedef struct node node;
+
+// struct node {
+//   int value;
+//   struct node *left, *right;
+// };
 
 node* newNode(int item)
 {
+  // malloc's return type is void*
+  // No need to cast the return value from malloc
+  // "C is perfectly capable of implicitly converting the void* return value to any other pointer."
+  // https://stackoverflow.com/questions/14768230/malloc-for-struct-and-pointer-in-c
   node *new_node = malloc(sizeof(node));
 
   new_node->value = item;
@@ -31,7 +47,7 @@ void printInOrder(node *root)
   }
 }
 
-// recursive
+// Recursive
 // node* insert(node* node, int item)
 // {
 //   if (node == NULL) {
@@ -45,28 +61,56 @@ void printInOrder(node *root)
 //   return node;
 // }
 
+// Iterative v1
+// node* insert(node* node, int item)
+// {
+//   if (node == NULL) {
+//     return newNode(item);
+//   }
+
+//   while (node) {
+//     if (item < node->value) {
+//       if (node->left == NULL) {
+//         node->left = newNode(item);
+//         break;
+//       } else {
+//         node = node->left;
+//       }
+//     } else {
+//       if (node->right == NULL) {
+//         node->right = newNode(item);
+//         break;
+//       } else {
+//         node = node->right;
+//       }
+//     }
+//   }
+
+//   return node;
+// }
+
 node* insert(node* node, int item)
 {
   if (node == NULL) {
     return newNode(item);
   }
 
+  struct node *parent;
+
   while (node) {
+    parent = node;
+
     if (item < node->value) {
-      if (node->left == NULL) {
-        node->left = newNode(item);
-        break;
-      } else {
-        node = node->left;
-      }
+      node = node->left;
     } else {
-      if (node->right == NULL) {
-        node->right = newNode(item);
-        break;
-      } else {
-        node = node->right;
-      }
+      node = node->right;
     }
+  }
+
+  if (item < parent->value) {
+    parent->left = newNode(item);
+  } else {
+    parent->right = newNode(item);
   }
 
   return node;
