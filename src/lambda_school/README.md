@@ -80,6 +80,14 @@
 72. [Find Rotation Point in Array](72.%20[py]%20Find%20Rotation%20Point)
 73. [Doubly Linked List](73.%20[py]%20Doubly%20Linked%20List) 📝
 74. [Permutation Palindrome](74.%20[py]%20Permutation%20Palindrome)
+75. Making Change
+76. [Ring Buffer](76.%20[py]%20Ring%20Buffer)
+77. Telephone Words
+78. LRU Cache
+79. Temperature Tracker
+80. Heap Sort
+81. Time Planner
+82. Timsort
 
 [↑](#0)
 ***
