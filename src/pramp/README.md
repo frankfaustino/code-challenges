@@ -11,3 +11,4 @@
 
 - [Event Emitter](Frontend/Event%20Emitter)
 - [Search Autocomplete](Frontend/Search%20Autocomplete)
+- [Flip Counter](Frontend/Flip%20Counter)

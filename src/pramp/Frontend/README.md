@@ -1,4 +1,5 @@
 # Pramp — Frontend Challenges
 
-- [Event Emitter](Frontend/Event%20Emitter)
-- [Search Autocomplete](Frontend/Search%20Autocomplete)
+- [Event Emitter](Event%20Emitter)
+- [Search Autocomplete](Search%20Autocomplete)
+- [Flip Counter](Flip%20Counter)
