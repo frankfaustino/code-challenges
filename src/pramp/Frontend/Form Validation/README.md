@@ -16,7 +16,7 @@ Validate the form to allow submission. The validations should include common con
 
 And any other validation you think is needed.
 
-When you feel ready, you can validate your solution using any collaborative HTML/CSS renderer, such as [https://codepen.io/pen/?editors=1000](this one).
+When you feel ready, you can validate your solution using any collaborative HTML/CSS renderer, such as [this one](https://codepen.io/pen/?editors=1000).
 
 <details><summary>Hints</summary>
 <p>
