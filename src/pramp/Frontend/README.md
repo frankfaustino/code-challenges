@@ -4,3 +4,5 @@
 - [Search Autocomplete](Search%20Autocomplete)
 - [Flip Counter](Flip%20Counter)
 - [Calculator](Calculator)
+- [Form Validation](Form%20Validation)
+- [Infinite Scroll](Infinite%20Scroll)

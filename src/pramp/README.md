@@ -13,3 +13,5 @@
 - [Search Autocomplete](Frontend/Search%20Autocomplete)
 - [Flip Counter](Frontend/Flip%20Counter)
 - [Calculator](Frontend/Calculator)
+- [Form Validation](Frontend/Form%20Validation)
+- [Infinite Scroll](Frontend/Infinite%20Scroll)

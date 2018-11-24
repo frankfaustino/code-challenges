@@ -1,0 +1,38 @@
+.container {
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 1em;
+}
+
+.element-list__item {
+  background-color: #eee;
+  float: left;
+  height: 15em;
+  max-width: 50%;
+  opacity: 0.75;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s, -webkit-transform 0.2s;
+  width: 15em;
+}
+
+.element-list__item:hover {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.element-list__item__image {
+  display: block;
+  height: auto;
+  margin: 0;
+  opacity: 1;
+  transition: opacity 0.2s;
+  width: 100%;
+}
+
+.element-list__item__loader {
+  opacity: 0;
+}
