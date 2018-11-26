@@ -61,7 +61,7 @@ const elementList = document.querySelector('.element-list')
 // Load the first batch of elements
 loadNextBatch()
 
-// Load more batches when scorlling to the end
+// Load more batches when scrolling to the end
 window.onscroll = function() {
   if (getScrollTop() < getDocumentHeight() - window.innerHeight) return
   loadNextBatch()
