@@ -1,0 +1,41 @@
+.form__wrapper {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 400px;
+}
+
+.form__group {
+  display: grid;
+  grid-template-columns: 95% 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'label label' 'input validation';
+  margin-bottom: 5px;
+}
+
+.form__group label {
+  grid-area: label;
+  font-weight: bold;
+}
+
+.form__input {
+  grid-area: input;
+}
+
+.input__validation {
+  display: none;
+  font-size: 0.5rem;
+  grid-area: validation;
+  margin-left: 5px;
+}
+
+.form__input.valid ~ .input__validation {
+  display: inline-block;
+}
+
+.form__input.valid:invalid ~ .input__validation {
+  display: none;
+}
+
+.password__help {
+  font-size: 0.75rem;
+  font-style: italic;
+}

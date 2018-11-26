@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign up form</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div class="form__wrapper">
+      <form name="sign-up-form" onsubmit="return validateForm(this);">
+        <div class="form__group">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            class="form__input"
+            autocomplete="false"
+            required
+            title="First name is required."
+            oninput="return validateRequired(this);"
+            onchange="return validateRequired(this);"
+          />
+          <div class="input__validation">✔️</div>
+        </div>
+        <div class="form__group">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            class="form__input"
+            autocomplete="false"
+            required
+            title="Last name is required."
+            oninput="return validateRequired(this);"
+            onchange="return validateRequired(this);"
+          />
+          <div class="input__validation">✔️</div>
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            class="form__input"
+            autocomplete="false"
+            required
+            pattern="^.{0,64}$"
+            title="Enter an email address with a maximum of 64 characters."
+            oninput="validateEmail(this);"
+            onchange="validateEmail(this);"
+          />
+          <div class="input__validation">✔️</div>
+        </div>
+        <div class="form__group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="form__input"
+            autocomplete="false"
+            required
+            pattern="^((?=.*[0-9])(?=.*[a-zA-Z])).{6,12}$"
+            title="Enter a password between 6 and 12 characters, containing at least one letter and one number."
+            oninput="validatePassword(this);"
+            onchange="validatePassword(this);"
+          />
+          <div class="input__validation">✔️</div>
+        </div>
+        <div class="form__group">
+          <label for="passwordConfirm">Confirm Password</label>
+          <input
+            type="password"
+            name="passwordConfirm"
+            class="form__input"
+            autocomplete="false"
+            required
+            pattern="^((?=.*[0-9])(?=.*[a-zA-Z])).{6,12}$"
+            title="Passwords must match."
+            oninput="validatePassword(this);"
+            onchange="validatePassword(this);"
+          />
+          <div class="input__validation">✔️</div>
+        </div>
+        <p class="password__help">
+          Passwords must be between 6 and 12 characters long, containing at
+          least one letter and one number. Please note, passwords are case
+          sensitive.
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script type="application/javascript" src="main.js"></script>
+</html>

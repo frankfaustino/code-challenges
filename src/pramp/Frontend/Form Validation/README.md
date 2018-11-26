@@ -33,11 +33,11 @@ When you feel ready, you can validate your solution using any collaborative HTML
 <details><summary>Answer</summary>
 <p>
 
-[Here](https://codepen.io/prampcontent/pen/WgepzQ)’s an example of a simple validation form, with some (non-critical) assistance from jquery and bootstrap.
+[Here](solution)’s an example of a simple validation form,.
 
 A few points to notice:
 
-- inputs are being validated both on submission and on input.
+- inputs are being validated both on form submission and on input.
 - feedback is given to the user in real time.
 - requirements that aren’t obvious (i.e. password) are explicitly stated.
 
