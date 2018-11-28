@@ -7,14 +7,53 @@ If you'd like to give the challenges a shot read the usage instructions below. I
 
 <hr>
 
-#### Usage:
+## Contents:
+[__Lambda School__](src/lambda_school)
 
-1. `cd` into the directory of your choice.  
-2. Read through the challenge `README.md`.  
-3. Solve the challenge in the corresponding `js` or `py` file.
-4. Test your solution:
+[__Codewars__](src/codewars) — [my profile](https://www.codewars.com/users/dasfrank)  
+ - 4 kyu
+ - 5 kyu
+ - 6 kyu
+ - 7 kyu
+ - 8 kyu
 
-JavaScript
+[__CodeSignal__](src/codesignal) — [my profile](https://app.codesignal.com/profile/lefrenk)  
+ - Arcade
+ - Challenges
+ - Company Challenges
+ - Interview Practice
+
+[__HackerRank__](src/hackerrank) — [my profile](https://www.hackerrank.com/frenk)  
+ - 30 Days of Code
+ - Algorithms
+ - Data Structures
+ - Interview Preparation Kit
+
+[__LeetCode__](src/leetcode) — [my profile](https://leetcode.com/frankfaustino/)  
+
+[__Pramp__](src/pramp)
+ - Data Structures and Algorithms
+ - Frontend
+
+[__Project Euler__](src/projecteuler)
+
+[__Google Codejam__](src/google_codejam)
+ - 2018
+
+[__various__](src/various)
+
+<hr>
+
+## Usage:
+
+1. clone the repo  
+2. `npm i` to install dependencies  
+3. `cd` into the directory of your choice  
+4. Read through the challenge `README.md`  
+5. Solve the challenge in the corresponding `js` or `py` file
+6. Test your solution:
+
+For JavaScript
 ```
 npm test <filename>
 ```
@@ -23,20 +62,13 @@ or Python
 python tests/<filename>
 ```
 
-#### Example:
+## Example:
 
-1. `cd src/codesignal/company_challenges/Uber/parkingSpot/`
+1. `cd src/codesignal/Company Challenges/Uber/parkingSpot/`
 2. Read the `README.md`  
 3. Add your solution code to `parkingSpot.js`
 4. `npm test parkingSpot`
 
-<hr>
-
-#### Links:
-[codewars.com/users/dasfrank](https://www.codewars.com/users/dasfrank)  
-[hackerrank.com/frenk](https://www.hackerrank.com/frenk)  
-[app.codesignal.com/profile/lefrenk](https://app.codesignal.com/profile/lefrenk)  
-[leetcode.com/frankfaustino/](https://leetcode.com/frankfaustino/)  
 <hr>
 
 👋
