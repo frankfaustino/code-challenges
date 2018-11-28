@@ -4,86 +4,37 @@
 // Lang   : JavaScript
 
 // Recursive solution
-function largestValuesInTreeRows(t) {
-  const output = []
+function largestValuesInTreeRows(t, depth = 0, output = []) {
+  if (t) {
+    output[depth] = output[depth] ? Math.max(output[depth], t.value) : t.value
 
-  const traverse = (current, depth) => {
-    if (!current) return
-
-    if (!output[depth]) {
-      output[depth] = current.value
-    } else {
-      output[depth] = Math.max(output[depth], current.value)
-    }
-
-    traverse(current.left, depth + 1)
-    traverse(current.right, depth + 1)
+    largestValuesInTreeRows(t.left, depth + 1, output)
+    largestValuesInTreeRows(t.right, depth + 1, output)
   }
-
-  traverse(t, 0)
 
   return output
 }
 
-// Iterative solution WIP
-// const t = {
-//   value: -1,
-//   left: {
-//     value: 5,
-//     left: {
-//       value: -1,
-//       left: {
-//         value: 10,
-//         left: null,
-//         right: null
-//       },
-//       right: null
-//     },
-//     right: null
-//   },
-//   right: {
-//     value: 7,
-//     left: null,
-//     right: {
-//       value: 1,
-//       left: {
-//         value: 5,
-//         left: null,
-//         right: null
-//       },
-//       right: null
-//     }
-//   }
-// }
-/*
-      -1
-      / \
-      5   7
-    /     \
-  -1        1
-  /        /
-  10       5
-Expected [-1, 7, 1, 10]
-Output   [-1, 7, 10, 5]
-*/
-// function largestValuesInTreeRows(t) {
-//   const output = []
-//   const queue = []
-//   queue.push(t)
+// Iterative solution
+function largestValuesInTreeRows(t) {
+  const output = []
+  let queue = t ? [t] : []
 
-//   while (queue.length > 0) {
-//     const nums = queue.map(val => val.value)
-//     console.log('👉', nums)
-//     output.push(Math.max(...nums))
+  while (queue.length > 0) {
+      const row = queue
+      queue = []
+      let max = -Infinity
 
-//     for (let i = 0; i < queue.length; i++) {
-//       const node = queue.shift()
-//       if (node.left) queue.push(node.left)
-//       if (node.right) queue.push(node.right)
-//     }
-//   }
+      row.forEach(node => {
+          max = Math.max(max, node.value)
+          if (node.left) queue.push(node.left)
+          if (node.right) queue.push(node.right)
+      })
 
-//   return output
-// }
+      output.push(max)
+  }
+
+  return output
+}
 
 module.exports = largestValuesInTreeRows
