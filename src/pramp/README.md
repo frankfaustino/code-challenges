@@ -15,3 +15,4 @@
 - [Calculator](Frontend/Calculator)
 - [Form Validation](Frontend/Form%20Validation)
 - [Infinite Scroll](Frontend/Infinite%20Scroll)
+- [Holy Grail](Frontend/Holy%20Grail)
