@@ -1,3 +1,8 @@
+// Source : https://adventofcode.com/2018/day/2
+// Author : Frank Faustino
+// Date   : 2018-12-02
+// Lang   : JavaScript
+
 const { readFileSync } = require('fs')
 
 const input = readFileSync(require.resolve('./input'), 'utf8')
