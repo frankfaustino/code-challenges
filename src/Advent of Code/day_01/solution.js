@@ -1,6 +1,6 @@
-// Source : https://adventofcode.com/2018/day/2
+// Source : https://adventofcode.com/2018/day/1
 // Author : Frank Faustino
-// Date   : 2018-12-02
+// Date   : 2018-12-01
 // Lang   : JavaScript
 
 const { readFileSync } = require('fs')
