@@ -10,4 +10,5 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 
 ***
 
-- [Day 01](day%2001)
+- [Day 01](day_01)
+- [Day 02](day_02)
