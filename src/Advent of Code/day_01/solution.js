@@ -3,9 +3,7 @@
 // Date   : 2018-12-01
 // Lang   : JavaScript
 
-const { readFileSync } = require('fs')
-
-const input = readFileSync(require.resolve('./input'), 'utf8')
+const input = require('../utils')('01', 'input')
 
 const parseInput = input => input.split(/\n/).map(Number)
 

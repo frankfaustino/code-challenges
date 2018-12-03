@@ -3,11 +3,7 @@
 // Date   : 2018-12-02
 // Lang   : JavaScript
 
-const { readFileSync } = require('fs')
-
-const input = readFileSync(require.resolve('./input'), 'utf8')
-
-const parseInput = input => input.split(/\n/)
+const input = require('../utils')('02', 'input')
 
 const checkCount = string => {
   const counter = string.split('').reduce((obj, char) => {
@@ -17,14 +13,14 @@ const checkCount = string => {
   return Object.values(counter)
 }
 
-const partOne = input => {
-  const string = parseInput(input)
+const partOne = boxes => {
   let twos = 0
   let threes = 0
 
-  string.forEach(line => {
-    if (checkCount(line).includes(2)) twos++
-    if (checkCount(line).includes(3)) threes++
+  boxes.split(/\n/).forEach(box => {
+    const count = checkCount(box)
+    if (count.includes(2)) twos++
+    if (count.includes(3)) threes++
   })
 
   return twos * threes
