@@ -3,23 +3,36 @@
 // Author : Frank Faustino
 // Date   : 2018-01-13
 
+// The nth root of x is the same as x to the power of 1/n. Math.pow(x, 1/n)
+const root = Math.pow(16, 1/4)
+Math.pow(root, 4) === 16
+
 const root = (x, n) => {
-  let left = 1
-  let right = x
-  let mid = (left + right) / 2
   if (x === 0) return 0
-  while (Math.abs(Math.pow(mid, n) - x) >= 0.001) {
-    if (Math.pow(mid, n) > x) right = mid
-    else if (Math.pow(mid, n) < x) left = mid
-    mid = (left + right) / 2
+  let start = 0
+  let end = x
+  let approxRoot = (start + end) / 2
+
+  while (approxRoot - start >= 0.001) {
+    if (Math.pow(approxRoot, n) > x) {
+      end = approxRoot
+    } else if (Math.pow(approxRoot, n) < x) {
+      start = approxRoot
+    } else {
+      break
+    }
+    approxRoot = (start + end) / 2
   }
-  return Math.round(mid * 1000) / 1000
+
+  return Math.round(approxRoot * 1000) / 1000
 }
 
 /* ——— Test cases ——— */
-root(4, 2) // -> 2
-root(27, 3) // -> 3
-root(16, 4) // -> 4
-root(3, 2) // -> 1.732
-root(10, 3) // -> 2.154
-root(160, 3) // -> 5.429
+console.log(root(3, 2)) // -> 1.732
+console.log(root(7, 3)) // -> 1.913
+console.log(root(16, 4)) // -> 2
+console.log(root(4, 2)) // -> 2
+console.log(root(10, 3)) // -> 2.154
+console.log(root(9, 2)) // -> 3
+console.log(root(27, 3)) // -> 3
+console.log(root(160, 3)) // -> 5.429
