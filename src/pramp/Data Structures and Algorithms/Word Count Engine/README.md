@@ -21,7 +21,10 @@ output: [ ["practice", "3"], ["perfect", "2"],
 - [input] string `document`
 - [output] array.array.string
 
-## Hints
+<br />
+
+<details><summary><b>Hints</b></summary>
+
 - If your peer is stuck, you can start things up by asking about the data structures needed for the solution.
 - For each data structure, ask your peer to explain what it is and why is it optimal in this case.
 - Things your peer should be cognizant of: tokenizing the `document` string, cleaning whitespaces and punctuation and converting words to lowercase.
@@ -29,8 +32,17 @@ output: [ ["practice", "3"], ["perfect", "2"],
 - Your peer may be tempted to use a standard `O(N⋅log(N))` sorting algorithm to meet the question requirements. While this is an acceptable solution, they can do better than that and attain and `O(N)` time complexity, where `N` stands for the number of words in the document.
 - Ask your peer why, from a practical perspective, it’s ok to measure the time and space complexities in terms of the number of words and not in terms of the number of characters. Obviously, the latter is more accurate, however, in practice, using words is asymptotically accurate enough with the extra benefit of being more convenient.
 
-## Answer
-Let `document` consist of `N` words where `M` of them are unique (`M ≤ N`). The solution consists of two steps: 1) parsing the string according to the criteria described in the problem and counting the number of occurrences of each word. 2) sorting the `[word, occurrence]` pairs by the number of words’ occurrences in a descending order.
+</details>
+
+<br />
+
+<details><summary><b>Solution</b></summary>
+
+The `document` consist of `N` words where `M` of them are unique (`M ≤ N`).
+
+The solution consists of two steps:
+1) parsing the string according to the criteria described in the problem and counting the number of occurrences of each word.
+2) sorting the `[word, occurrence]` pairs by the number of words’ occurrences in a descending order.
 
 **Step 1:** we tokenize `document` into words by using whitespaces as delimiters.
 
@@ -38,7 +50,7 @@ For each `word`, we clean it from all non-alphabetic characters (digits, punctua
 
 As for counting, We’ll use a Map ([Hash Table](http://en.wikipedia.org/wiki/Hash_table)) to store words and their corresponding occurrences. A map is optimal in this case because it allows us find, store and update operations in `O(1)` time complexity.
 
-Step 2: as for the sorting part, rather than sorting the entries in the map directly, which takes `O(M⋅log(M))` - where `M` is number of unique words in `document` - a better solution will be to place words into an array of string arrays indexed by the occurrence number and then iterate through the array in the reverse order. This is similar to a [Bucket Sort](https://en.wikipedia.org/wiki/Bucket_sort). The proposed solution trades off a bit of space for performance, which may be a reasonable trade under certain circumstances.
+**Step 2:** as for the sorting part, rather than sorting the entries in the map directly, which takes `O(M⋅log(M))` — where `M` is number of unique words in `document` — a better solution will be to place words into an array of string arrays indexed by the occurrence number and then iterate through the array in the reverse order. This is similar to a [Bucket Sort](https://en.wikipedia.org/wiki/Bucket_sort). The proposed solution trades off a bit of space for performance, which may be a reasonable trade under certain circumstances.
 
 ### Pseudocode:
 ```
@@ -128,3 +140,4 @@ function wordCountEngine(document):
 
 **Note:** the reason we’re analyzing the problem complexity in terms of the number of words, and not number of characters is because the [average length of an english word is ~5](http://www.wolframalpha.com/input/?i=average+english+word+length), so from a practical perspective this could be regarded as a constant and therefore can be ignored (i.e. `O(5N) = O(N)`)
 
+</details>
