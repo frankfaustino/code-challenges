@@ -151,9 +151,7 @@ After 3 seconds, the message appeared briefly: `HI`. Of course, your message wil
 
 __What message will eventually appear in the sky?__
 
-<br />
-
-<details><answer><b>Answer</b></answer>
+<details><summary><b>Answer</b></summary>
 
 Your puzzle answer was `RLEZNRAN`.
 
@@ -164,9 +162,7 @@ Good thing you didn't have to wait, because that would have taken a long time - 
 
 Impressed by your sub-hour communication capabilities, the Elves are curious: __exactly how many seconds would they have needed to wait for that message to appear?__
 
-<br />
-
-<details><answer><b>Answer</b></answer>
+<details><summary><b>Answer</b></summary>
 
 Your puzzle answer was `10240`.
 

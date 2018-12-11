@@ -61,9 +61,7 @@ For grid serial number `42`, the largest 3x3 square's top-left is `21,61` (with 
 
 __What is the `X,Y` coordinate of the top-left fuel cell of the 3x3 square with the largest total power?__
 
-<br />
-
-<details><answer><b>Answer</b></answer>
+<details><summary><b>Answer</b></summary>
 
 Your puzzle answer was `233,36`.
 
@@ -81,9 +79,7 @@ Realizing this, you now must find the __square of any size with the largest tota
 
 __What is the `X,Y,size` identifier of the square with the largest total power?__
 
-<br />
-
-<details><answer><b>Answer</b></answer>
+<details><summary><b>Answer</b></summary>
 
 Your puzzle answer was `231,107,14`.
 

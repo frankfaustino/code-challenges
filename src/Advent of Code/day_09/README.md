@@ -54,9 +54,7 @@ Here are a few more examples:
 
 __What is the winning Elf's score?__
 
-<br />
-
-<details><answer><b>Answer</b></answer>
+<details><summary><b>Answer:</b></summary>
 
 Your puzzle answer was `382055`.
 
@@ -67,9 +65,7 @@ Amused by the speed of your answer, the Elves are curious:
 
 __What would the new winning Elf's score be if the number of the last marble were 100 times larger?__
 
-<br />
-
-<details><answer><b>Answer</b></answer>
+<details><summary><b>Answer</b></summary>
 
 Your puzzle answer was `3133277384`.
 
