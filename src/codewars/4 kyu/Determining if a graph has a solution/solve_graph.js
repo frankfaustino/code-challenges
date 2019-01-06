@@ -1,6 +1,6 @@
 // Source : https://www.codewars.com/kata/determining-if-a-graph-has-a-solution/train/javascript
 // Author : Frank Faustino
-// Date . : 2019-01-05
+// Date   : 2019-01-05
 
 function solve_graph(s, e, a) {
   let found = false

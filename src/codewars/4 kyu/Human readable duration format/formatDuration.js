@@ -1,6 +1,6 @@
 // Source : https://www.codewars.com/kata/human-readable-duration-format/javascript
 // Author : Frank Faustino
-// Date . : 2019-01-05
+// Date   : 2019-01-05
 
 function formatDuration(time) {
   if (time === 0) {

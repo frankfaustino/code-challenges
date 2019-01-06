@@ -1,6 +1,6 @@
 // Source : https://www.codewars.com/kata/functional-binary-trees
 // Author : Frank Faustino
-// Date . : 2019-01-05
+// Date   : 2019-01-05
 
 class BinaryTree {
   constructor() {}
