@@ -10,7 +10,7 @@ If you'd like to give the challenges a shot read the usage instructions below. I
 ## Contents:
 [__Lambda School__](src/lambda_school)
 
-[__Codewars__](src/codewars) — [my profile](https://www.codewars.com/users/dasfrank)  
+[__Codewars__](src/codewars) — [![my profile](https://www.codewars.com/users/dasfrank/badges/micro)](https://www.codewars.com/users/dasfrank)  
  - 4 kyu
  - 5 kyu
  - 6 kyu
