@@ -1,7 +1,7 @@
 const UriBuilder = require('../uriBuilder')
 
 const root = 'http://www.codewars.com'
-const builder = new UriBuilder(`${root}?a=1`)
+const builder = new UriBuilder(root)
 
 describe('Codewars — UriBuilder', () => {
   it('should have build method', () => {
@@ -9,7 +9,10 @@ describe('Codewars — UriBuilder', () => {
     builder.build()
     expect(spy).toBeCalled()
   })
-  it('params.a = 1', () => {
+  it('should build a valid URI', () => {
+    expect(builder.build()).toEqual(root)
+  })
+  it('params.a = 2', () => {
     builder.params.a = '2'
     expect(builder.build()).toEqual(`${root}?a=2`)
   })

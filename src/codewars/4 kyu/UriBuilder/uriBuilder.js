@@ -7,12 +7,10 @@ const parser = str => {
   const params = {}
   if (str.includes('?')) {
     const [left, right] = str.split('?')
-    if (right.includes('&')) {
-      right.split('&').forEach(param => (params[param[0]] = param[2]))
-    } else {
-      params[right[0]] = right[2]
-    }
+    right.split('&').forEach(param => (params[param[0]] = param[2]))
     output.push(left, params)
+  } else {
+    output.push(str, params)
   }
   return output
 }
@@ -24,11 +22,11 @@ class UriBuilder {
     this.params = params
   }
   build() {
-    let output = `${this.url}`
+    let output = this.url
     const params = Object.entries(this.params)
     if (params.length) {
       output += `?${params
-        .map(([key, val]) => `${key}=${val.toString().replace(/\s/, '%20')}`)
+        .map(([key, val]) => `${key}=${encodeURIComponent(val)}`)
         .join('&')}`
     }
     return output
