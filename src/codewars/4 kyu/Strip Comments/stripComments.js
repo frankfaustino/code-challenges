@@ -1,4 +1,4 @@
-// Snail  : https://www.codewars.com/kata/strip-comments/train/javascript
+// Source : https://www.codewars.com/kata/strip-comments/train/javascript
 // Author : Frank Faustino
 // Date   : 2019-01-06
 

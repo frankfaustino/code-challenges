@@ -1,3 +1,7 @@
+// Source : https://www.codewars.com/kata/fluent-calculator-1/train/javascript
+// Author : Frank Faustino
+// Date   : 2019-01-05
+
 class Magic {
   constructor() {
     let value = 0
