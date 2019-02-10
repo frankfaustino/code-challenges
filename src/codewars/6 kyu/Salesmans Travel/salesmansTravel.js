@@ -20,7 +20,7 @@ function travel(r, zipcode) {
   // Code here
 }
 
-console.log(travel(ad, 'AA 45522')) // "AA 45522:Paris St. Abbeville,Paris St. Abbeville/67,670")
+// console.log(travel(ad, 'AA 45522')) // "AA 45522:Paris St. Abbeville,Paris St. Abbeville/67,670")
 // travel(ad, "EX 34342") // "EX 34342:Pussy Cat Rd. Chicago,Pussy Cat Rd. Chicago/10,100")
 // travel(ad, "EX 34345") // "EX 34345:Pussy Cat Rd. Chicago/100")
 // travel(ad, "AA 45521") // "AA 45521:Paris bd. Abbeville,Paris St. Abbeville/674,67")
