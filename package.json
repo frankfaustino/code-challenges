@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/frankfaustino/Code-Challenges#readme",
   "dependencies": {
-    "jest": "^23.6.0"
+    "jest": "^27.4.5"
   }
 }
