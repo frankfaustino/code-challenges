@@ -1,0 +1,20 @@
+const solution = require('../solution')
+
+describe('Codewars — Folding your way to the moon', () => {
+    test('Simple tests', () => {
+        expect(solution(384000000)).toEqual(42)
+        expect(solution(11814369166744396)).toEqual(67)
+        expect(solution(2.4055124889392415e+27)).toEqual(105)
+        expect(solution(-1.037443005159513e+28)).toEqual(null)
+        expect(solution(1.1312479497614133e+26)).toEqual(100)
+        expect(solution(1.881038350479696e+28)).toEqual(108)
+        // expect(solution(1e-7)).toEqual(0)
+        // expect(solution(0)).toEqual(0)
+        // expect(solution(3.643798254002032e-8)).toEqual(0)
+        // expect(solution(2.0679440878616568e-7)).toEqual(0)
+        // expect(solution(8.321947341010613e-10)).toEqual(0)
+        // expect(solution(1.62108175327396e-8)).toEqual(0)
+        // expect(solution(0.00001587084582603134)).toEqual(0)
+        // expect(solution(1.22291612017029e-7)).toEqual(0)
+    })
+})
