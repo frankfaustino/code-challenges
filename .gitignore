@@ -3,3 +3,4 @@ tmp
 .vscode
 __pycache__
 .DS_Store
+.idea
