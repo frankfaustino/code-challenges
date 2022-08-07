@@ -1,5 +1,5 @@
 /**
- * Time complexity: O(n log n)
+ * Time complexity: O(log n)
  * Space complexity: O(1)
  * @param {number[]} nums
  * @param {number} target
