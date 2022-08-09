@@ -5,7 +5,7 @@
  * @param {string} magazine
  * @return {boolean}
  */
- function canConstruct(ransomNote, magazine) {
+function canConstruct(ransomNote, magazine) {
     // Approach:
     // - count the frequency of each character in magazine
     // - store the counts in a hash map
@@ -13,7 +13,7 @@
     // - subtract the count from magazineCount hash map
     // - if we come across 0, return false
     const magazineCount = makeFrequencyMap(magazine)
-        
+
     for (const char of ransomNote) {
         if (!magazineCount[char]) return false
 
@@ -46,7 +46,7 @@ function canConstructAlternative(ransomNote, magazine) {
     // - compare the two hash maps
     const ransomNoteCount = makeFrequencyMap(ransomNote)
     const magazineCount = makeFrequencyMap(magazine)
-        
+
     for (const [key] of Object.keys(ransomNoteCount)) {
         if (magazineCount.hasOwnProperty(key)) {
             if (magazineCount[key] < ransomNoteCount[key]) {
