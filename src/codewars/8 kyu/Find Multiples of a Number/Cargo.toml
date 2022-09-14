@@ -1,0 +1,12 @@
+[package]
+name = "find_multiples_of_a_number"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "find_multiples_of_a_number"
+path = "main.rs"
