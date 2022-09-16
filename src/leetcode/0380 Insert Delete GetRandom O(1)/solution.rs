@@ -25,6 +25,19 @@ impl RandomizedSet {
     }
     
     fn remove(&mut self, val: i32) -> bool {
+        match self.map.remove(&val) {
+            None => false,
+            Some(index) => {
+                self.list.swap_remove(index);
+                if index < self.list.len() {
+                    self.map.insert(self.list[index], index);
+                }
+
+                true
+            }
+        }
+    }
+    /* fn remove(&mut self, val: i32) -> bool {
         if !self.map.contains_key(&val) {
             return false;
         }
@@ -44,11 +57,10 @@ impl RandomizedSet {
         }
 
         true
-    }
+    } */
     
     fn get_random(&self) -> i32 {
-        let mut rng = rand::thread_rng();
-        self.list[rng.gen_range(0..self.list.len())]
+        self.list[rand::thread_rng().gen_range(0..self.list.len())]
     }
 }
 
