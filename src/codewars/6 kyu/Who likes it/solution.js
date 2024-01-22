@@ -2,8 +2,9 @@
 // Author : Frank Faustino
 // Date   : 2024-01-22
 
+// Time complexity  : O(n)
+// Space complexity : O(1)
 function likes(names) {
-    console.log(names)
     switch (names.length) {
         case 0: return `no one likes this`
         case 1: return `${names[0]} likes this`
