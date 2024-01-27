@@ -6,6 +6,7 @@ describe('Codewars — Simple Pig Latin', () => {
         expect(solution('This is my string')).toEqual('hisTay siay ymay tringsay')
         expect(solution('Hello world !')).toEqual('elloHay orldway !')
         expect(solution('O tempora o mores !')).toEqual('Oay emporatay oay oresmay !')
+        expect(solution('Lorem, ipsum: dolor. Sit amet?')).toEqual('oremLay, psumiay: olorday. itSay metaay?')
     })
 })
 

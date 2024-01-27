@@ -6,8 +6,13 @@
 // Space complexity : O(n)
 const pigIt = s => s
     .split(' ')
-    .map(w => /^[.,!?]/.test(w[0]) ? w[0] : `${w.slice(1)}${w[0]}ay`)
+    .map(w => /^\W/.test(w[0]) ? w[0] : `${w.slice(1)}${w[0]}ay`)
     .join(' ')
+
+// RegEx to match and rearrange the order
+// Time complexity  : O(n)
+// Space complexity : O(n)
+// const pigIt = s => s.replace(/(\w)(\w*)/g, '$2$1ay')
 
 module.exports = pigIt
 
