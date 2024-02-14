@@ -1,0 +1,10 @@
+[package]
+name = "exes_and_ohs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "exes_and_ohs"
+path = "main.rs"
