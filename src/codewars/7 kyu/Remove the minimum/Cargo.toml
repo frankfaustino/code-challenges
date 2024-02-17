@@ -1,0 +1,10 @@
+[package]
+name = "remove_the_minimum"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "remove_the_minimum"
+path = "main.rs"
