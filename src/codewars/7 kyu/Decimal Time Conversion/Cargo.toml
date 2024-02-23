@@ -1,0 +1,10 @@
+[package]
+name = "decimal_time_conversion"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "decimal_time_conversion"
+path = "main.rs"
