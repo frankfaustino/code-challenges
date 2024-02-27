@@ -1,0 +1,10 @@
+[package]
+name = "create_phone_number"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "create_phone_number"
+path = "main.rs"
