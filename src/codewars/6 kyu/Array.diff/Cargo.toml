@@ -1,0 +1,10 @@
+[package]
+name = "array_diff"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "array_diff"
+path = "main.rs"
