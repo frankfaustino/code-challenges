@@ -1,0 +1,10 @@
+[package]
+name = "replace_with_alphabet_position"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "replace_with_alphabet_position"
+path = "main.rs"
