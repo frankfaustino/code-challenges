@@ -1,0 +1,10 @@
+[package]
+name = "bit_counting"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "bit_counting"
+path = "main.rs"
