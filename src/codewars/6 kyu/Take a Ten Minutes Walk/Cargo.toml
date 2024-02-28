@@ -1,0 +1,10 @@
+[package]
+name = "take_a_ten_minutes_walk"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "take_a_ten_minutes_walk"
+path = "main.rs"
