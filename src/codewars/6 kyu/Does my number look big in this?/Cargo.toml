@@ -1,0 +1,10 @@
+[package]
+name = "does_my_number_look_big_in_this"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "does_my_number_look_big_in_this"
+path = "main.rs"
