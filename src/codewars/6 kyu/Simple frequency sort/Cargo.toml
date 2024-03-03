@@ -1,0 +1,10 @@
+[package]
+name = "simple_frequency_sort"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "simple_frequency_sort"
+path = "main.rs"
