@@ -2,9 +2,9 @@
 // Author : Frank Faustino
 // Date   : 2024-03-02
 
-// Time complexity  : O()
-// Space complexity : O()
-function groupAnagrams(words){
+// Time complexity  : O(n * k log k) where k is avg length of a word
+// Space complexity : O(n)
+function groupAnagrams(words) {
     const anagrams = {}
 
     words.forEach(word => {
