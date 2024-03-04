@@ -1,0 +1,10 @@
+[package]
+name = "your_order_please"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "your_order_please"
+path = "main.rs"
