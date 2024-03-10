@@ -1,0 +1,8 @@
+[package]
+name = "intersection-of-two-arrays"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "intersection-of-two-arrays"
+path = "solution.rs"
